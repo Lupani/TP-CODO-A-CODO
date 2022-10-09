@@ -37,6 +37,46 @@ header{
 .enlaces-nav:hover{
     background: lightblue;
 }
+section{
+    height: auto;
+    width: 40%;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    justify-self: flex-start;
+}
+.conteItemsCarrusel{
+    border: 1px blue;
+    height: 353px;
+    width: 716px;
+    overflow: hidden;
+}
+.itemCarrusel{
+border: 1px black;
+height: 100%;
+position: relative;
+width: 353px;
+
+}
+.tarjetaCarrusel{
+    height: 100%;
+    width: 100%;
+}
+
+#puntos{
+    background-color: darkcyan;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+#puntos a i{
+    color: white;
+    padding: 1em;
+}
+aside{
+    display: flex;
+    justify-content: flex-end;
+}
 footer {
     background-color: darkcyan;
     color: rgb(0, 0, 0);
