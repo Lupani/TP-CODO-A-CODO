@@ -12,18 +12,37 @@
     border-color: rgb(211, 12, 12);
     border-style: double;
     padding: 0;
-    
 }
-.fila>img {
+
+/*.fila>img {
     width: calc(100% / 3);
     height: 100%;
     margin: 3% 0.5%;
     padding: 0;
-    border-color: rgb(141, 10, 10) ;
+    border-color: rgb(141, 10, 10);
     border-radius: 10px;
     border-style: dotted;
     border-width: 5px;
+}*/
+
+.combo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
