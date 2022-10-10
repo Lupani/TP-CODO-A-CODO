@@ -11,6 +11,10 @@
     --fuente4: 'Yeseva One', cursive;
 }
 
+body {
+    background-color: rgb(141, 60, 60);
+}
+
 /* HEADER */
 
 header {
@@ -56,6 +60,7 @@ header {
     text-align: center;
     padding: 4%;
     font-family: var(--fuente4); /* LLAMAR A FUENTE GUARDADA EN ROOT */
+    font-size: 4em;
 }
 
 .fila {
@@ -166,7 +171,7 @@ header {
 }
 
 .mensaje-final {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: var(--fuente2);
     padding: 5%;
     color: #ffffff;
