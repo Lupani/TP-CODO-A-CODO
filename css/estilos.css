@@ -75,7 +75,10 @@ width: 353px;
 }
 aside{
     display: flex;
-    justify-content: flex-end;
+    justify-self: right;
+}
+.horarios{
+    border-style: dashed;
 }
 footer {
     background-color: darkcyan;
