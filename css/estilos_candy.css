@@ -60,7 +60,7 @@ header {
     text-align: center;
     padding: 4%;
     font-family: var(--fuente4); /* LLAMAR A FUENTE GUARDADA EN ROOT */
-    font-size: 4em;
+    font-size: 5vw;
 }
 
 .fila {
@@ -145,7 +145,7 @@ header {
 }
 
 .imagen-texto {
-    font-size: 2em;
+    font-size: 3vw;
 }
 
 
@@ -161,17 +161,17 @@ header {
 
 .combo-descripcion {
     /*font-size: 135%;*/
-    font-size: 1.35em;
+    font-size: 2vw; /* VW=VIEWPORT WIDTH - HACER EL TEXTO RESPONSIVE */
     font-family: var(--fuente2);
 }
 
 .combo-precio {
-    font-size: 27px;
+    font-size: 2.5vw;
     font-family: var(--fuente3);
 }
 
 .mensaje-final {
-    font-size: 2.5rem;
+    font-size: 3.9vw;
     font-family: var(--fuente2);
     padding: 5%;
     color: #ffffff;
@@ -190,7 +190,9 @@ header {
     align-content: center;
     padding: 5%;
     justify-content: space-around;
-    width: 100%;
+    font-size: 8vw;
+
+    
 }
 
 .mensaje-final>p{
@@ -204,14 +206,19 @@ header {
 
 
 .mensaje-final>#icono1 {
-    align-items: flex-start;
+    justify-content: flex-start;
+    
     padding: 2%;
+    font-size: 8vw;
 }
 .mensaje-final>#icono2{
+    justify-content: flex-end;
     
-    align-items: flex-end;
     padding: 2%;
+    font-size: 8vw;
 }
+
+
 
 
 /* FOOTER */
@@ -246,7 +253,34 @@ footer {
     width: 2em;
 }
 
+/* REPONSIVE ? */
+
+
   
+
+/*@media (max-width: 500px) {
+    .iconos-entrefila>i {
+        width: 50%;
+      
+
+    }
+
+
+}*/
+
+/*EJEMPLO DE MEDIA QUERY*/
+/*@media screen and (max-width: 640px) {
+    body {
+    background: blue;
+    } }
+    @media screen and (min-width: 640px) and (max-width: 1280px) {body { background: red;
+    } }
+    @media screen and (min-width: 1280px) {
+    body { background: green;
+    } }*/
+
+
+
 
 
 
