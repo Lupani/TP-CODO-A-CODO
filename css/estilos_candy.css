@@ -69,11 +69,11 @@ header {
     justify-content: center;
     width: 100%;
     height: 100%;
-    margin: 0 0 10% 0;
+    margin: 3% 0;
     border-width: 8px;
     border-color: var(--color1); /* LLAMAR A COLOR GUARDADO EN ROOT */
     border-style: solid;
-    padding: 4% 2%;
+    padding: 4.5% 2.2%;
     background-image: url(/img/fondo_candy.jpg);
     
 }
@@ -179,8 +179,18 @@ header {
     flex-direction: row;
     background-color: var(--color1);
 
+}
 
-
+.iconos-entrefila {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    padding: 5%;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .mensaje-final>p{
@@ -188,15 +198,19 @@ header {
     align-content: center;
     align-self: center;
     text-align: center;
+    padding: 2%;
+    
 }
 
 
 .mensaje-final>#icono1 {
     align-items: flex-start;
+    padding: 2%;
 }
 .mensaje-final>#icono2{
     
     align-items: flex-end;
+    padding: 2%;
 }
 
 
