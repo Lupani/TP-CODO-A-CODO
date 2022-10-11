@@ -20,7 +20,7 @@ body {
 /* HEADER */
 
 header {
-    background-color: var(--colorAzul);
+    background-color: darkcyan;
 }
 
 .titulo{

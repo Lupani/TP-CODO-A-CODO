@@ -1,9 +1,12 @@
+*{
+    margin: 0;
+}
 body{
     background-color: white;
     width: auto;
 }
 header{
-    background-color: darkcyan;
+    background-color: rgb(1, 21, 72);
 }
 .titulo{
     display: flex;
@@ -19,6 +22,7 @@ header{
     text-align: center;
     font-size: 5em;
     color: whitesmoke;
+    font-family: 'Dancing Script', cursive;
 }
 
 .contenedor{
@@ -29,11 +33,12 @@ header{
 }
 .enlaces-nav{
     color: whitesmoke;
-    font-weight: 800;
+    font-weight: bold;
     font-size: 1.2em;
     text-decoration: none;   
     padding: 1em;
     margin: auto; 
+    font-family: 'Ubuntu', sans-serif;
 }
 .enlaces-nav:hover{
     background: lightblue;
@@ -41,6 +46,7 @@ header{
 .contenido{
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
 }
 section{
     height: auto;
@@ -69,7 +75,7 @@ width: auto;
 }
 
 #puntos{
-    background-color: darkcyan;
+    background-color: rgb(141, 10, 10);
     color: white;
     display: flex;
     justify-content: center;
@@ -95,7 +101,7 @@ aside{
 }
 
 footer {
-    background-color: darkcyan;
+    background-color: rgb(1, 21, 72);
     color: rgb(0, 0, 0);
     height: 5em;
     align-items: center;
