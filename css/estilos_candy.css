@@ -160,7 +160,7 @@ header {
 }
 
 .combo-descripcion {
-    /*font-size: 135%;*/
+    
     font-size: 2vw; /* VW=VIEWPORT WIDTH - HACER EL TEXTO RESPONSIVE */
     font-family: var(--fuente2);
 }
