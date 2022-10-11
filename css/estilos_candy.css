@@ -7,10 +7,8 @@
     --colorBordo: rgb(141, 10, 10);
     --colorAzul: rgb(1, 21, 72);
     --colorRojo: rgb(141, 60, 60);
-    --fuente1: Arial, Helvetica, sans-serif;
-    --fuente2: 'Acme', sans-serif;
-    --fuente3: 'Laila', sans-serif;
-    --fuente4: 'Yeseva One', cursive;
+    --fuenteCuerpo: 'Ubuntu', sans-serif;
+    --fuenteTitulo: 'Lobster', sans-serif;
 }
 
 body {
@@ -19,10 +17,9 @@ body {
 
 /* HEADER */
 
-header {
-    background-color: darkcyan;
+header{
+    background-color: rgb(1, 21, 72);
 }
-
 .titulo{
     display: flex;
     justify-content: center;
@@ -37,7 +34,9 @@ header {
     text-align: center;
     font-size: 5em;
     color: whitesmoke;
+    font-family: 'Dancing Script', cursive;
 }
+
 .contenedor{
     display: flex;
     flex-wrap: nowrap;
@@ -46,11 +45,12 @@ header {
 }
 .enlaces-nav{
     color: whitesmoke;
-    font-weight: 800;
+    font-weight: bold;
     font-size: 1.2em;
     text-decoration: none;   
     padding: 1em;
     margin: auto; 
+    font-family: 'Ubuntu', sans-serif;
 }
 .enlaces-nav:hover{
     background: lightblue;
@@ -61,7 +61,7 @@ header {
 .titulo-candy {
     text-align: center;
     padding: 4%;
-    font-family: var(--fuente4); /* LLAMAR A FUENTE GUARDADA EN ROOT */
+    font-family: var(--fuenteTitulo); /* LLAMAR A FUENTE GUARDADA EN ROOT */
     font-size: 5vw;
 }
 
@@ -127,7 +127,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: var(--fuente4) ;
+    font-family: var(--fuenteCuerpo) ;
     opacity: 0;
     transition: opacity 0.25s;
 }
@@ -158,23 +158,23 @@ header {
     align-self: center;
     color: white;
     justify-content: center;
+    align-content: center;
     
 }
 
 .combo-descripcion {
-    
     font-size: 2vw; /* VW=VIEWPORT WIDTH - HACER EL TEXTO RESPONSIVE */
-    font-family: var(--fuente2);
+    font-family: var(--fuenteCuerpo);
 }
 
 .combo-precio {
     font-size: 2.5vw;
-    font-family: var(--fuente3);
+    font-family: var(--fuenteCuerpo);
 }
 
 .mensaje-final {
     font-size: 3.9vw;
-    font-family: var(--fuente2);
+    font-family: var(--fuenteCuerpo);
     padding: 5%;
     color: #ffffff;
     display: flex;
