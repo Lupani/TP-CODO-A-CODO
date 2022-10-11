@@ -20,6 +20,7 @@ header{
     font-size: 5em;
     color: whitesmoke;
 }
+
 .contenedor{
     display: flex;
     flex-wrap: nowrap;
@@ -37,9 +38,13 @@ header{
 .enlaces-nav:hover{
     background: lightblue;
 }
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
 section{
     height: auto;
-    width: 40%;
+    width: auto;
     background-color: black;
     color: antiquewhite;
     display: flex;
@@ -55,7 +60,7 @@ section{
 border: 1px black;
 height: 100%;
 position: relative;
-width: 353px;
+width: auto;
 
 }
 .tarjetaCarrusel{
@@ -74,9 +79,21 @@ width: 353px;
     padding: 1em;
 }
 aside{
-    display: flex;
-    justify-content: flex-end;
+    float: right;
+    width: 50%;
+    height: 100%;
 }
+.horarios{
+    border-collapse: collapse;
+    font-size: 1.2em;
+    width: 100%;
+}
+.horariosCabecera{
+    background-color: cyan;
+    color: bisque;
+    text-align: center;
+}
+
 footer {
     background-color: darkcyan;
     color: rgb(0, 0, 0);

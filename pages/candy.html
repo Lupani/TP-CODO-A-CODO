@@ -5,95 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Candy</title>
-    <link rel="stylesheet" href="/css/estilos_candy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Laila:wght@700&family=Yeseva+One&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+<script src="https://kit.fontawesome.com/e423abbd6a.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="/css/estilos_candy.css">
 </head>
 <body>
-    <header class="header-prueba">
-        Aca va el header
-        <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="/pages/candy.html">Candy</a>
-        <a href="/pages/cartelera.html">Cartelera</a>
-        <a href="/pages/contacto.html">Contacto</a>
-    </nav>
-
+    <header>
+        <div class="titulo">
+        <img src="/img/carrete-de-cine.png" alt="logo cine">
+        <h1>Cine Grupo 9 </h1> 
+        </div>
+        <nav class="contenedor">
+        <a href="/index.html" class="enlaces-nav">INICIO</a>
+        <a href="/pages/candy.html" class="enlaces-nav">CANDY</a>
+        <a href="/pages/cartelera.html" class="enlaces-nav">CARTELERA<a>
+        <a href="/pages/contacto.html" class="enlaces-nav">CONTACTO<a>
+        </div>
+        </nav>
     </header>
     
-    <h1 class="titulo">Candy</h1>
+    <h1 class="titulo-candy animate__animated animate__fadeIn">Candy</h1>
 
-    <div class="fila">
-        
-        <div class="combo" id="Combo1"><p>Combo 1</p> 
+    <div class="fila">  
+
+        <div class="combo" id="Combo1">
          <div class="combo-descripcion"><p>2 Bebidas + Bolsa Grande de Pochoclos + M&M's</p></div>
-            
-         <div class="combo-imagen"><img src="/img/Combo1.png"></div>
-         <div class="combo-precio"><p>$120</p></div>
-            
-            
+         <div class="combo-imagen">
+            <img src="/img/Combo1.png" class="imagen-img">
+            <div class="imagen-overlay">
+                <div class="imagen-texto">Combo 1</div>
+            </div>
+         </div>
+         <div class="combo-precio"><p>$1120</p></div>
         </div>
-        
 
+        <div class="combo" id="Combo2">
+            <div class="combo-descripcion"><p>Vaso de Gaseosa + Porción de Nachos con Cheddar</p></div>
+            <div class="combo-imagen">
+               <img src="/img/Combo2.png" class="imagen-img">
+               <div class="imagen-overlay">
+                   <div class="imagen-texto">Combo 2</div>
+               </div>
+            </div>
+            <div class="combo-precio"><p>$650</p></div>
+           </div>
 
-        <div class="combo" id="Combo2" ><p>Combo 2</p> 
-          <div class="combo-descripcion"><p>Bebida + Nachos con Cheddar</p>  </div>
-          <div class="combo-imagen"><img src="/img/Combo2.png"></div> 
-          <div class="combo-precio"><p>$120</p></div>
-        </div>
-        
-        <div class="combo" id="Combo3"><p>Combo 3</p> 
-            <div class="combo-descripcion"> <p>2 Bebidas + Pochoclos + Nachos con Cheddar </p> </div>
-            <div class="combo-imagen"><img src="/img/Combo3.png"></div>
-            <div class="combo-precio"><p>$120</p></div>
-        </div>
-          
-          
+           <div class="combo" id="Combo3">
+            <div class="combo-descripcion"><p>2 Bebidas + Pochoclos + Nachos con Cheddar</p></div>
+            <div class="combo-imagen">
+               <img src="/img/Combo3.png" class="imagen-img">
+               <div class="imagen-overlay">
+                   <div class="imagen-texto">Combo 3</div>
+               </div>
+            </div>
+            <div class="combo-precio"><p>$910</p></div>
+           </div>
     </div>
 
+    <div class="iconos-entrefila">
+        <i class="fa-solid fa-glass-water"></i>
+        <i class="fa-solid fa-burger"></i>
+        <i class="fa-solid fa-candy-cane"></i>
+        <i class="fa-solid fa-hotdog"></i>
+        <i class="fa-solid fa-pizza-slice"></i>
+        <i class="fa-solid fa-ice-cream"></i>
+    </div>
     
+
     <div class="fila">
-        <div class="combo" id=Combo4"><p>Combo 4</p> 
-            <div class="combo-descripcion"><p>2 Bebidas + Pebete de Jamón y Queso</p></div>
-            <div class="combo-imagen"><img src="/img/Combo4.jpg"></div> 
-            <div class="combo-precio"><p>$120</p></div>
-            
-        </div> 
 
-        <div class="combo" id="Combo5"><p>Combo 5</p>
-          <div class="combo-descripcion"><p>2 Bebidas + 2 Nachos con Cheddar</p>  </div>
-          <div class="combo-imagen"><img src="/img/Combo5.png"></div>
-          <div class="combo-precio"><p>$120</p></div>
-        </div>
-        
-        <div class="combo" id="Combo3"><p>Combo 6</p> 
-            <div class="combo-descripcion"> <p>2 Bebidas + Pochoclos Medianos + Nachos con Cheddar </p> </div>
-            <div class="combo-imagen"><img src="/img/Combo6.png"></div>
-            <div class="combo-precio"><p>$120</p></div>
-        </div>
-   
-          
+        <div class="combo" id="Combo4">
+            <div class="combo-descripcion"><p>Vaso de Gaseosa + Sandwich de Jamón y Queso</p></div>
+            <div class="combo-imagen">
+               <img src="/img/Combo4.jpg" class="imagen-img">
+               <div class="imagen-overlay">
+                   <div class="imagen-texto">Combo 4</div>
+               </div>
+            </div>
+            <div class="combo-precio"><p>$750</p></div>
+           </div>
+           <div class="combo" id="Combo5">
+            <div class="combo-descripcion"><p>2 Bebidas + 2 Hamburguesas Especiales + Papas Lays</p></div>
+            <div class="combo-imagen">
+               <img src="/img/Combo5.png" class="imagen-img">
+               <div class="imagen-overlay">
+                   <div class="imagen-texto">Combo 5</div>
+               </div>
+            </div>
+            <div class="combo-precio"><p>$850</p></div>
+           </div>
+           <div class="combo" id="Combo6">
+            <div class="combo-descripcion"><p>2 Bebidas + Bolsa Mediana de Pochoclos + Nachos con Cheddar</p></div>
+            <div class="combo-imagen">
+               <img src="/img/Combo6.png" class="imagen-img">
+               <div class="imagen-overlay">
+                   <div class="imagen-texto">Combo 6</div>
+               </div>
+            </div>
+            <div class="combo-precio"><p>$990</p></div>
+           </div>       
     </div>
+    <div class="mensaje-final">
+        <i class="fa-solid fa-film" id="icono1"></i>
+        <p>Para adquirir los productos de nuestro candy, te esperamos en nuestro cine!</p>
+        <i class="fa-solid fa-ticket" id="icono2"></i>
+        
 
-    <footer class="footer-prueba">
-        Acá va el footer <br>
-        (C) 2022 Cine Grupo 9
-        Al navegar por el sitio usted acepta los <a href="#">términos y condiciones</a> y nuestra <a href="#">Política de Privacidad</a>
+
+
+
+    </div>
+    <footer>
+        <div class="copyright">
+            <p>© Copyright © 2022</p>
+        </div>
+        <div class="redes">
+            <h2>Seguinos en:</h2>
+            <ul>
+                <li><a href="#"><img src="/img/facebook.png" alt="Facebook"> </a> </li>
+                <li><a href="#"><img src="/img/logotipo-de-instagram.png" alt="instagram"> </a> </li>
+            </ul>
+        </div>
     </footer>
-
-
-    
-
-
-
-
-
-    
-
-
-
-
-   
-
-   
-    
 </body>
 </html>
