@@ -4,23 +4,22 @@
 }
 
 :root {
-    --color1: rgb(141, 10, 10);
-    --fuente1: Arial, Helvetica, sans-serif;
-    --fuente2: 'Acme', sans-serif;
-    --fuente3: 'Laila', sans-serif;
-    --fuente4: 'Yeseva One', cursive;
+    --colorBordo: rgb(141, 10, 10);
+    --colorAzul: rgb(1, 21, 72);
+    --colorRojo: rgb(141, 60, 60);
+    --fuenteCuerpo: 'Ubuntu', sans-serif;
+    --fuenteTitulo: 'Lobster', sans-serif;
 }
 
 body {
-    background-color: rgb(141, 60, 60);
+    background-color: var(--colorRojo);
 }
 
 /* HEADER */
 
-header {
+header{
     background-color: rgb(1, 21, 72);
 }
-
 .titulo{
     display: flex;
     justify-content: center;
@@ -35,7 +34,9 @@ header {
     text-align: center;
     font-size: 5em;
     color: whitesmoke;
+    font-family: 'Dancing Script', cursive;
 }
+
 .contenedor{
     display: flex;
     flex-wrap: nowrap;
@@ -44,11 +45,12 @@ header {
 }
 .enlaces-nav{
     color: whitesmoke;
-    font-weight: 800;
+    font-weight: bold;
     font-size: 1.2em;
     text-decoration: none;   
     padding: 1em;
     margin: auto; 
+    font-family: 'Ubuntu', sans-serif;
 }
 .enlaces-nav:hover{
     background: lightblue;
@@ -59,7 +61,7 @@ header {
 .titulo-candy {
     text-align: center;
     padding: 4%;
-    font-family: var(--fuente4); /* LLAMAR A FUENTE GUARDADA EN ROOT */
+    font-family: var(--fuenteTitulo); /* LLAMAR A FUENTE GUARDADA EN ROOT */
     font-size: 5vw;
 }
 
@@ -71,7 +73,7 @@ header {
     height: 100%;
     margin: 3% 0;
     border-width: 8px;
-    border-color: var(--color1); /* LLAMAR A COLOR GUARDADO EN ROOT */
+    border-color: var(--colorBordo); /* LLAMAR A COLOR GUARDADO EN ROOT */
     border-style: solid;
     padding: 4.5% 2.2%;
     background-image: url(/img/fondo_candy.jpg);
@@ -93,12 +95,12 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-color: var(--color1);
+    border-color: var(--colorBordo);
     border-radius: 5%;
     border-style: solid;
     border-width: 5px;
     margin: 0 1%;
-    background-color: var(--color1);
+    background-color: var(--colorBordo);
 }
 
 
@@ -125,7 +127,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: var(--fuente4) ;
+    font-family: var(--fuenteCuerpo) ;
     opacity: 0;
     transition: opacity 0.25s;
 }
@@ -156,28 +158,28 @@ header {
     align-self: center;
     color: white;
     justify-content: center;
+    align-content: center;
     
 }
 
 .combo-descripcion {
-    
     font-size: 2vw; /* VW=VIEWPORT WIDTH - HACER EL TEXTO RESPONSIVE */
-    font-family: var(--fuente2);
+    font-family: var(--fuenteCuerpo);
 }
 
 .combo-precio {
     font-size: 2.5vw;
-    font-family: var(--fuente3);
+    font-family: var(--fuenteCuerpo);
 }
 
 .mensaje-final {
     font-size: 3.9vw;
-    font-family: var(--fuente2);
+    font-family: var(--fuenteCuerpo);
     padding: 5%;
     color: #ffffff;
     display: flex;
     flex-direction: row;
-    background-color: var(--color1);
+    background-color: var(--colorBordo);
 
 }
 
@@ -223,7 +225,7 @@ header {
 
 /* FOOTER */
 footer {
-    background-color: darkcyan;
+    background-color: var(--colorAzul);
     color: rgb(0, 0, 0);
     height: 5em;
     align-items: center;
