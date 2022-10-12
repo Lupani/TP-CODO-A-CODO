@@ -1,20 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="contacto" content="formulario de contacto para que se puedan cominicar con el cine">
     <title>Contacto</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/css/estilos_contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <nav>
-        menu navegacion
-        <a href="/nosotros.html">Nosotros</a>
-        <a href="/peliculas.html">Películas </a>
-        <a href="/contacto.html">Contacto </a>
-        <a href="">Inicio</a>
-    </nav>
+<body class="contacto">
+    <header>
+        <div class="titulo">
+        <img src="/img/carrete-de-cine.png" alt="logo cine">
+        <h1>Cine Grupo 9 </h1> 
+        </div>
+
+        <div>
+        <nav class="contenedor">
+        <a href="/index.html" class="enlaces-nav">INICIO</a>
+        <a href="/pages/candy.html" class="enlaces-nav">CANDY</a>
+        <a href="/pages/cartelera.html" class="enlaces-nav">CARTELERA<a>
+        <a href="/pages/contacto.html" class="enlaces-nav">CONTACTO<a>
+        </div>
+        </nav>
+    </header>
+
+   <form action="" method="POST" id="form">
+    <h2 class="titulo">Contactanos</h2>
+    <input type="text" name="Nombre" id="name" placeholder="Nombre" required>
+    <input type="text" name="Correo" id="correo" placeholder="Correo" required>
+    <input type="text" name="Telefono" id="telefono" placeholder="Telefono">
+    <textarea name="mensaje" id="textarea" cols="30" rows="10" placeholder="Escribe tu mensaje" required></textarea>
+    <button type="submit" id="boton">Enviar</button>
+    <p class="warnings" id="warnings"></p>
+   </form>
+    
+
+   <footer>
+    <div class="copyright">
+        <p>© Copyright © 2022</p>
+    </div>
+    <div class="redes">
+        <h2>Seguinos en:</h2>
+        <ul>
+            <li><a href="#"><img src="/img/facebook.png" alt="Facebook"> </a> </li>
+            <li><a href="#"><img src="/img/logotipo-de-instagram.png" alt="instagram"> </a> </li>
+        </ul>
+    </div>
+</footer>
+</body>
+<script src="/js/mijs.js"></script>
+</html>
     <!--*Formulario de reserva:
 Nombre:
 Apellido:
@@ -25,5 +64,3 @@ Cantidad de asientos:
 Boton de confirmacion
 -->
 
-</body>
-</html>

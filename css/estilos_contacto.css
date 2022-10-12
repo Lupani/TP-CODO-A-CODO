@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(141, 60, 60);
+    width: auto;
+}
+header{
+    background-color: rgb(1, 21, 72);
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    flex-wrap: nowrap;
+}
+.titulo img{
+    width: 5em;
+}
+.titulo h1{
+    text-align: center;
+    font-size: 5em;
+    color: whitesmoke;
+    font-family: 'Dancing Script', cursive;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.enlaces-nav{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;   
+    padding: 1em;
+    margin: auto; 
+    font-family: 'Ubuntu', sans-serif;
+}
+.enlaces-nav:hover{
+    background: lightblue;
+}
+.contacto{
+    background-image: url(/img/cine.jfif);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+
+}
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.titulo{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border: none;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+#boton:hover{
+    cursor: pointer;
+}
+@media(max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color:#B06AB3;
+    padding-top: 20px;
+}
+
+footer {
+    background-color: rgb(1, 21, 72);
+    color: rgb(250, 250, 250);
+    height: 5em;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+
+}
+.copyright{
+    float: left;
+    margin: 0.5em 2em;
+    font-size: 1.2em;
+}
+.redes{
+    float: right;
+    display: flex;
+    margin: 0.5em 2em;
+    }
+.redes ul{
+    list-style-type: none;
+}
+.redes ul li{
+    display: inline;
+    margin: 0 0.5em;
+}
+.redes ul li a{
+    text-decoration: none;
+}
+.redes ul li img{
+    width: 2em;
+}
