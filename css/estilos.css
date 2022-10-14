@@ -2,7 +2,7 @@
     margin: 0;
 }
 body{
-    background-color: white;
+    background-color: rgb(141, 60, 60);
     width: auto;
 }
 header{
@@ -16,11 +16,11 @@ header{
     flex-wrap: nowrap;
 }
 .titulo img{
-    width: 5em;
+    width: 5rem;
 }
 .titulo h1{
     text-align: center;
-    font-size: 5em;
+    font-size: 500%;
     color: whitesmoke;
     font-family: 'Dancing Script', cursive;
 }
@@ -34,7 +34,7 @@ header{
 .enlaces-nav{
     color: whitesmoke;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 120%;
     text-decoration: none;   
     padding: 1em;
     margin: auto; 
@@ -44,67 +44,204 @@ header{
     background: lightblue;
 }
 .contenido{
-    display: flex;
-    flex-wrap: wrap;
     font-family: 'Ubuntu', sans-serif;
+    margin-top: 1%;
 }
-section{
-    height: auto;
-    width: auto;
-    background-color: black;
-    color: antiquewhite;
-    display: flex;
-    justify-self: flex-start;
-}
-.conteItemsCarrusel{
-    border: 1px blue;
-    height: 353px;
-    width: 716px;
-    overflow: hidden;
-}
-.itemCarrusel{
-border: 1px black;
-height: 100%;
-position: relative;
-width: auto;
+/*Carrusel*/
+section {
+          box-sizing: border-box;
+          margin: 1%;
+          padding: 0;
+      }
+      .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          width: 75%;
+          background-color: rgb(141, 10, 10);
 
-}
-.tarjetaCarrusel{
-    height: 100%;
-    width: 100%;
+      }
+      .container h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 3rem;
+        color: bisque;
+        text-align: center;
+        margin: 1%;
+      }
+      
+      .main-heading {
+          padding: 2rem 0 2rem 0;
+      }
+
+      .content {
+          position: relative;
+      }
+      .carousel-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          z-index: 50;
+      }
+      .slideshow {
+          height: 100%;
+          overflow: hidden;
+          position: relative;
+      }
+      .slideshow-wrapper {
+          display: flex;
+          width: 300%;
+          height: 100%;
+          position: relative;
+          animation: slideshow 15s infinite;
+      }
+      .slide {
+          width: 100%;
+          height: 100%;
+      }
+
+      .slide-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+
+      @keyframes slideshow {
+          0% {
+              left: 0;
+          }
+
+          10% {
+              left: 0;
+          }
+
+          15% {
+              left: -100%;
+          }
+
+          25% {
+              left: -100%;
+          }
+
+          30% {
+              left: -200%;
+          }
+
+          40% {
+              left: -200%;
+          }
+
+
+          60% {
+              left: -200%;
+          }
+
+          70% {
+              left: -200%;
+          }
+
+          75% {
+              left: -100%;
+          }
+
+          85% {
+              left: -100%;
+          }
+
+          90% {
+              left: 0%;
+          }
+      }
+
+      .slide-btn {
+          background-color: rgb(1, 21, 72);
+          border-radius: 50%;
+          border: .2rem solid rgb(1, 21, 72);
+          width: 1.2rem;
+          height: 1.2rem;
+          outline: none;
+          cursor: pointer;
+          position: absolute;
+          bottom: 3%;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 70;
+      }
+      .slide-btn-1 {
+          left: 45%;
+      }
+
+      .slide-btn-2 {
+          left: 50%;
+      }
+
+      .slide-btn-3 {
+          left: 55%;
+      }
+
+      .slide-btn-1:focus~.slideshow-wrapper {
+          animation: none;
+          left: 0;
+      }
+
+      .slide-btn-2:focus~.slideshow-wrapper {
+          animation: none;
+          left: -100%;
+      }
+
+      .slide-btn-3:focus~.slideshow-wrapper {
+          animation: none;
+          left: -200%;
+      }
+
+      .slide-btn:focus {
+          background-color: rgb(141, 60, 60);
+      }
+
+
+/*Tabla*/
+.tablaHorarios{
+    width: 95%;
 }
 
-#puntos{
-    background-color: rgb(141, 10, 10);
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-#puntos a i{
-    color: white;
-    padding: 1em;
-}
-aside{
-    float: right;
-    width: 50%;
-    height: 100%;
-}
 .horarios{
     border-collapse: collapse;
-    font-size: 1.2em;
+    table-layout: auto;
+    font-size: 1.5rem;
     width: 100%;
+    border: 5px solid rgb(141, 10, 10);
+    margin: 2.5%;
+    background-color: rgb(250, 250, 250, 25%);
+}
+.horarios caption{
+    caption-side: top;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: bisque;
 }
 .horariosCabecera{
-    background-color: cyan;
+    background-color: rgb(141, 10, 10);
     color: bisque;
     text-align: center;
+    font-size: 150%;
+    border: 5px solid rgb(141, 10, 10);
+}
+td {
+    font-size: 110%;
+    text-align: center;
+    border: 2px solid rgb(141, 10, 10);
 }
 
+/*Footer*/
 footer {
     background-color: rgb(1, 21, 72);
-    color: rgb(0, 0, 0);
+    color: rgb(250, 250, 250);
     height: 5em;
     align-items: center;
+    font-family: "Ubuntu", sans-serif;
 
 }
 .copyright{

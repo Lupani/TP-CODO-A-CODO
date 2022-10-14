@@ -11,54 +11,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 <body>
+
     <header>
         <div class="titulo">
         <img src="/img/carrete-de-cine.png" alt="logo cine">
         <h1>Cine Grupo 9 </h1> 
         </div>
+
+        <div>
         <nav class="contenedor">
         <a href="/index.html" class="enlaces-nav">INICIO</a>
         <a href="/pages/candy.html" class="enlaces-nav">CANDY</a>
-        <a href="/pages/cartelera.html" class="enlaces-nav">CARTELERA<a>
+        <a href="/pages/cartelera 2.html" class="enlaces-nav">CARTELERA<a>
         <a href="/pages/contacto.html" class="enlaces-nav">CONTACTO<a>
         </div>
         </nav>
     </header>
-    <div class="contenido">
-        <section>
-            <div class="carrusel">
-            <div class="conteItemsCarrusel">
-                <div class="itemCarrusel" id="Banner1">
-                    <div class="tarjetaCarrusel">
-                        <img src="/img/banner_bp.png" alt="Pantera Negra">
+<!-- Carrusel-->
+<section>
+    <div class="container">
+        <h1> Estrenos </h1>
+        <div class="content">
+            <div class="carousel-content">
+                <h1 class="carousel-heading">  </h1>
+            </div>
+            <div class="slideshow">
+                <button class="slide-btn slide-btn-1"></button>
+                <button class="slide-btn slide-btn-2"></button>
+                <button class="slide-btn slide-btn-3"></button>
+                <div class="slideshow-wrapper">
+                    <div class="slide">
+                        <img class="slide-img" src="/img/banner_bp.png" >
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img"src="/img/bannerLODLG.jpg" >
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img" src="/img/bannerThorlt.png" >
                     </div>
                 </div>
-                <div class="itemCarrusel" id="Banner2">
-                    <div class="tarjetaCarrusel">
-                        <img class="banner" src="/img/bannerLODLG.jpg" alt="La odisea de los giles">    
-                    </div>
-                   </div>
-                <div class="itemCarrusel" id="Banner3">
-                    <div class="tarjetaCarrusel">
-                        <img class="banner" src="/img/bannerThorlt.png" alt="Thor amor y trueno">
-                    </div>
-                </div>    
-            </div>
-            <div id="puntos">
-                <a href="#Banner1"><i class="fa-solid fa-circle"></i></a>
-                <a href="#Banner2"><i class="fa-solid fa-circle"></i></a>
-                <a href="#Banner3"><i class="fa-solid fa-circle"></i></a>
             </div>
         </div>
-        </section>
-        <aside class="tablaHorarios">
+    </div>
+</section>
+   
+        <section class="tablaHorarios">
             <table class="horarios">
+                <caption>Horarios</caption>
                 <tr class="horariosCabecera">
-                    <th>Pelicula</th>
+                    <th>Película</th>
                     <th colspan="5">Horarios</th>
                 </tr>
                 <tr>
-                    <td>Black Panther</td>
+                    <td>Black Panther 2</td>
                     <td>15:20</td>
                     <td>17:35</td>
                     <td>20:00</td>
@@ -67,71 +72,47 @@
                 </tr>
                 <tr>
                     <td> Minions 2 </td>
-                    <td>15:20</td>
+                    <td>13:15</td>
+                    <td>15:25</td>
                     <td>17:35</td>
-                    <td>20:00</td>
-                    <td>22:00</td>
-                    <td>22:30</td>
+                    <td>19:40</td>
+                    <td></td>
                 </tr>
                 <tr> 
                     <td> La Odisea de los Giles</td>
-                    <td>15:20</td>
-                    <td>17:35</td>
-                    <td>20:00</td>
-                    <td>22:00</td>
-                    <td>22:30</td>
+                    <td>12:05</td>
+                    <td>14:40</td>
+                    <td>16:55</td>
+                    <td>20:15</td>
+                    <td>22:05</td>
                 </tr>
                 <tr>
                     <td>Jurassic World: Dominion</td>
-                    <td>15:20</td>
-                    <td>17:35</td>
-                    <td>20:00</td>
-                    <td>22:00</td>
-                    <td>22:30</td>
+                    <td>11:55</td>
+                    <td>13:30</td>
+                    <td>15:35</td>
+                    <td>17:10</td>
+                    <td>19:20</td>
                 </tr>
                 <tr>
                     <td>Joker</td>
-                    <td>15:20</td>
-                    <td>17:35</td>
+                    <td>14:40</td>
+                    <td>16:55</td>
+                    <td>18:10</td>
                     <td>20:00</td>
-                    <td>22:00</td>
-                    <td>22:30</td>
+                    <td>21:25</td>
                 </tr>
                 <tr>
                     <td>Thor: Love and Thunder</td>
-                    <td>15:20</td>
-                    <td>17:35</td>
-                    <td>20:00</td>
-                    <td>22:00</td>
-                    <td>22:30</td>
+                    <td>13:10</td>
+                    <td>16:30</td>
+                    <td>17:20</td>
+                    <td>20:30</td>
+                    <td>21:15</td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>15:20</td>
-                    <td>17:35</td>
-                    <td>20:00</td>
-                    <td>22:00</td>
-                    <td>22:30</td>
-
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>15:20</td>
-                    <td>17:35</td>
-                    <td>20:00</td>
-                    <td>22:00</td>
-                    <td>22:30</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>15:20</td>
-                    <td>17:35</td>
-                    <td>20:00</td>
-                    <td>22:00</td>
-                    <td>22:30</td>
-                </tr>
             </table>
-        </aside>
+        </section>
     </div>
    
 
@@ -147,5 +128,6 @@
             </ul>
         </div>
     </footer>
+
 </body>
 </html>
