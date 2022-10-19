@@ -26,6 +26,7 @@ header{
     align-items: center;
     vertical-align: middle;
     flex-wrap: nowrap;
+    
 }
 .titulo img{
     width: 5em;
@@ -63,6 +64,7 @@ header{
     padding: 4%;
     font-family: var(--fuenteTitulo); /* LLAMAR A FUENTE GUARDADA EN ROOT */
     font-size: 5vw;
+    
 }
 
 .fila {
@@ -223,12 +225,14 @@ header{
 
 
 
+
 /* FOOTER */
 footer {
-    background-color: var(--colorAzul);
-    color: rgb(0, 0, 0);
+    background-color: rgb(1, 21, 72);
+    color: rgb(250, 250, 250);
     height: 5em;
     align-items: center;
+    font-family: "Ubuntu", sans-serif;
 
 }
 .copyright{
@@ -254,6 +258,10 @@ footer {
 .redes ul li img{
     width: 2em;
 }
+
+
+
+
 
 /* REPONSIVE ? */
 
