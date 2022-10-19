@@ -3,11 +3,17 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-body {
-	background: var(--fondo);
-	font-family: 'Open Sans', sans-serif;
+:root {
+    --colorBordo: rgb(141, 10, 10);
+    --colorAzul: rgb(1, 21, 72);
+    --colorRojo: rgb(141, 60, 60);
+    --fuenteCuerpo: 'Ubuntu', sans-serif;
+    --fuenteTitulo: 'Lobster', sans-serif;
 }
+body {
+    background-color: var(--colorRojo);
+}
+
 
 /* comienza HEADER */
 
@@ -53,39 +59,54 @@ header{
 }
 
 /* FIN HEADER*/
-header {
-	padding: 30px 0;
+.titulocartelera{
+    text-align: center;
+
+}
+/*body*/
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-header .contenedor {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+
+.centrado {
+    margin: 0 auto;
+    padding: 0 .8em;
 }
 
-header .logotipo {
-	font-family: 'Bebas Neue', cursive;
-	font-weight: normal;
-	color: var(--rojo);
-	font-size: 40px;
+.carteleraTitulo {
+    text-align: center;
+        padding: 4%;
+    font-family: var(--fuenteTitulo); /* LLAMAR A FUENTE GUARDADA EN ROOT */
+    font-size: 10vw;
 }
 
-header nav a {
-	color: #AAA;
-	text-decoration: none;
-	margin-right: 20px;
+.titulo1 {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
 }
 
-header nav a:hover,
-header nav a.activo {
-	color: #FFF;
+.card:hover {
+    -webkit-transform: scale(1.08);
+    transform:;
+    scale(1.5);
+    box-shadow: 10px 10px 34px 0px linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(8,8,112,1) 27%, rgba(9,57,121,1) 49%, rgba(0,212,255,1) 100%);
+    -webkit-box-shadow: 10px 10px 34px 0px rgba(0,104,255,0.75);
+    -moz-box-shadow: 10px 10px 34px 0px rgba(0,104,255,0.75);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
 }
 
-/* imagenes*/
-.peliculas{
-    padding: 0 3%;
-}
+  /* FIN ESTILOS CARDS */
 
+
+/* imagenes y cards cartelera*/
 .container{
     margin-top: 20px;
     display: grid;
@@ -102,18 +123,10 @@ header nav a.activo {
     width: 100%;
 }
 
-/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
-.pelicula-principal .descripcion {
-	font-weight: normal;
-	font-size: 1em;
-	line-height: 1.75em;
-	max-width: 50%;
-	margin-bottom: 1.25em;
-}
-
-.pelicula-principal .boton {
+.boton {
 	background: rgba(0,0,0, 0.5);
 	border: none;
+    align-items: center;
 	border-radius: 0.31em;
 	padding: 0.93em 1.87em;
 	color: #fff;
@@ -123,6 +136,13 @@ header nav a.activo {
 	font-size: 1.12em;
 }
 
+.cartelera h5,p{
+    font-size: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 220px;
+}
 .pelicula-principal .boton:hover {
 	background: #fff;
 	color: #000;
@@ -154,135 +174,6 @@ header nav a.activo {
 }
 
 
-
-
-
-
-
-
-
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
-:root {
-    --colorBordo: rgb(141, 10, 10);
-    --colorAzul: rgb(1, 21, 72);
-    --colorRojo: rgb(141, 60, 60);
-    --fuenteCuerpo: 'Ubuntu', sans-serif;
-    --fuenteTitulo: 'Lobster', sans-serif;
-}
-
-body {
-    background-color: var(--colorRojo);
-}
-
-/* comienza HEADER */
-
-header{
-    background-color: rgb(1, 21, 72);
-}
-.titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    flex-wrap: nowrap;
-}
-.titulo img{
-    width: 5em;
-}
-.titulo h1{
-    text-align: center;
-    font-size: 5em;
-    color: whitesmoke;
-    font-family: 'Dancing Script', cursive;
-}
-
-.contenedor{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-}
-.enlaces-nav{
-    color: whitesmoke;
-    font-weight: bold;
-    font-size: 1.2em;
-    text-decoration: none;   
-    padding: 1em;
-    margin: auto; 
-    font-family: 'Ubuntu', sans-serif;
-}
-.enlaces-nav:hover{
-    background: lightblue;
-}
-
-/* FIN HEADER*/
-
-/*body*/
-
-.contenido{
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.cabecera {
-    background-color: hsl(0, 88%, 61%);
-}
-
-.centrado {
-    margin: 0 auto;
-    padding: 0 .8em;
-}
-
-.carteleraTitulo {
-    text-align: center;
-        padding: 4%;
-    font-family: var(--fuenteTitulo); /* LLAMAR A FUENTE GUARDADA EN ROOT */
-    font-size: 10vw;
-}
-
-
-
-.titulo1 {
-    margin: 0 0 1em;
-    padding: 1em 0;
-    font-weight: 300;
-    color: hsl(0, 0%, 100%);
-}
-  /* ESTILOS CARDS */
- /* .cartelera {
-    width: 100%;
-    justify-content: center;
-    background-color: red;
-    padding: 0;
-  }*/
-/*.cards{
-    max-height: 10px;
- 
-}*/
-/* .item{
-    width: 60%;
-    padding: 5rem;
-   
-} */
-
-.card:hover {
-    -webkit-transform: scale(1.08);
-    transform:;
-    scale(1.5);
-    box-shadow: 10px 10px 34px 0px linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(8,8,112,1) 27%, rgba(9,57,121,1) 49%, rgba(0,212,255,1) 100%);
-    -webkit-box-shadow: 10px 10px 34px 0px rgba(0,104,255,0.75);
-    -moz-box-shadow: 10px 10px 34px 0px rgba(0,104,255,0.75);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
-}
 
 .cartelera h5,p{
     font-size: 70%;
