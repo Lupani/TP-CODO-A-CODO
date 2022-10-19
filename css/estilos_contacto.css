@@ -13,8 +13,8 @@
 
 
 body {
-    
     background-color: var(--colorRojo);
+    
 }
 
 
@@ -74,7 +74,7 @@ header{
 form{
     width: 450px;
     margin: auto;
-    background: rgba(0, 0, 0, 0.4);
+    background: var(--colorBordo);
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;
@@ -95,6 +95,9 @@ form{
 .toda-la-pagina {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    align-self: center;
+    align-content: center;
     justify-content: space-between;
     margin: 3%;
     padding: 3%;
@@ -103,6 +106,7 @@ form{
 .datos {
     display: flex;
     flex-direction: column;
+    
     background-color: var(--colorBordo);
     border-color: var(--colorBordo);
     border-radius: 5%; /* REVISAR */
@@ -113,10 +117,11 @@ form{
     
 }
 
-.formulario {
-   display: flex;
+/*.formulario {
+   
 
-}
+}*/
+
 
 
 
