@@ -108,11 +108,30 @@ header{
 
 .datos p {
     font-family: var(--fuenteCuerpo);
-    text-align: center;
+    text-align: justify;
     color: #ffffff;
     font-size: 1.5vw;
+    padding: 2%;
 }
 
+.datos-linea {
+    display: flex;
+    flex-direction: row;
+}
+
+.datos-linea i {
+    display: flex;
+    align-items: flex-start;
+    align-self: center;
+    color: #ffffff;
+    font-size: 3vw;
+    padding: 1%;
+}
+
+.datos-linea p {
+    display: flex;
+    align-items: flex-end;
+}
 
 
 .formulario {
