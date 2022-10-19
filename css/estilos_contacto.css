@@ -71,15 +71,7 @@ header{
 
 }*/
 
-form{
-    width: 450px;
-    margin: auto;
-    background: var(--colorBordo);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 20px;
-}
+
 /*.titulo{ CAMBIAR NOMBRE DE ETIQUETA
     color: #fff;
     text-align: center;
@@ -99,39 +91,56 @@ form{
     align-self: center;
     align-content: center;
     justify-content: space-between;
-    margin: 3%;
+    margin: 0 3%;
     padding: 3%;
 }
 
 .datos {
     display: flex;
     flex-direction: column;
-    
     background-color: var(--colorBordo);
     border-color: var(--colorBordo);
-    border-radius: 5%; /* REVISAR */
+    border-radius: 5%; 
     border-width: 10%;
     width: 50%;
+    /*height: 100%;*/
+}
 
+.datos p {
+    font-family: var(--fuenteCuerpo);
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+
+
+
+.formulario {
+    /*width: 450px;*/ /* HACER RESPONSIVE*/
+    width: 45%;
+    /*margin: auto;*/
+    background: var(--colorBordo);
+    padding: 10px 20px;
+    /*box-sizing: border-box;*/
+    /*margin-top: 20px;*/
+    border-radius: 5%;
+}
+
+.maps iframe {
+    border-radius: 5%;
+    /*border-width: 10%;*/
+    /*border-color: var(--colorBordo);*/
+    padding: 3%;
+    width: 100%;
     
     
 }
-
-/*.formulario {
-   
-
-}*/
-
-
-
-
-
 
 
 /* fin cambios 18-10 */
 
 
-/* CAMBIAR COLOR DE FONDO A BORDO*/
+
 input, textarea{
     width: 100%;
     margin-bottom: 20px;
