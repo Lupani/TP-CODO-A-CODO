@@ -72,14 +72,15 @@ header{
 }*/
 
 
-/*.titulo{ CAMBIAR NOMBRE DE ETIQUETA
-    color: #fff;
+.titulo-contactos { 
+    color: #ffffff;
+    font-family: var(--fuenteCuerpo);
     text-align: center;
     margin: 0;
-    font-size: 30px;
+    font-size: 2.5vw;
     margin-bottom: 20px;
     border: none;
-}*/
+}
 
 
 /* cambios 18-10 */
@@ -103,8 +104,7 @@ header{
     border-radius: 5%; 
     border-width: 10%;
     width: 50%;
-    
-    
+    height: 100%;
 }
 
 .datos p {
@@ -134,9 +134,7 @@ header{
     align-items: flex-end;
 }
 
-
 .formulario {
-    /*width: 450px;*/ /* HACER RESPONSIVE*/
     width: 45%;
     /*margin: auto;*/
     background: var(--colorBordo);
@@ -144,17 +142,14 @@ header{
     /*box-sizing: border-box;*/
     /*margin-top: 20px;*/
     border-radius: 5%;
+    
 }
 
-
 .maps iframe {
-    border-radius: 5%;
-    
+    border-radius: 8%;
     padding: 3%;
     width: 100%;
-    height: 390px;
-    
-    
+    height: 32.5vw;
 }
 
 
@@ -168,6 +163,7 @@ input, textarea{
     padding: 7px;
     box-sizing: border-box;
     font-size: 17px;
+    font-family: var(--fuenteCuerpo);
 }
 textarea{
     min-height: 100px;
