@@ -257,6 +257,7 @@ footer {
     float: right;
     display: flex;
     margin: 0.5em 2em;
+    font-size: 1.5em;
     }
 .redes ul{
     list-style-type: none;
