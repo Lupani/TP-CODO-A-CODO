@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="contacto" content="formulario de contacto para que se puedan cominicar con el cine">
     <title>Contacto</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/estilos_contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e423abbd6a.js" crossorigin="anonymous"></script>
 
+
+    
 </head>
-<body class="contacto">
+<body> <!--class="contacto" -->
+
     <header>
         <div class="titulo">
         <img src="/img/carrete-de-cine.png" alt="logo cine">
         <h1>Cine Grupo 9 </h1> 
         </div>
-
-        <div>
         <nav class="contenedor">
         <a href="/index.html" class="enlaces-nav">INICIO</a>
         <a href="/pages/candy.html" class="enlaces-nav">CANDY</a>
@@ -28,15 +31,54 @@
         </nav>
     </header>
 
-   <form action="" method="POST" id="form">
-    <h2 class="titulo">Contactanos</h2>
-    <input type="text" name="Nombre" id="name" placeholder="Nombre" required>
-    <input type="text" name="Correo" id="correo" placeholder="Correo" required>
-    <input type="text" name="Telefono" id="telefono" placeholder="Telefono">
-    <textarea name="mensaje" id="textarea" cols="30" rows="10" placeholder="Escribe tu mensaje" required></textarea>
-    <button type="submit" id="boton">Enviar</button>
-    <p class="warnings" id="warnings"></p>
-   </form>
+    <div class="toda-la-pagina">
+
+
+
+        <div class="datos">
+            
+            
+            
+            <div class="datos-linea"><i class="fa-solid fa-location-dot"></i><p>Estamos ubicados en calle 9 de julio 53, en la ciudad de Villa Carlos Paz, Córdoba.</p></div>
+            
+            <div class="datos-linea"><i class="fa-regular fa-file-lines"></i><p>Si tenés alguna consulta, usá el formulario y te responderemos a la brevedad al email que nos proporcionaste.</p></div> 
+           
+                <div class="maps"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=9%20de%20Julio%2053,%20Villa%20Carlos%20Paz,%20C%C3%B3rdoba+(Cine%20Grupo%209)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+                    frameborder="0"><a href="https://www.gps.ie/car-satnav-gps/">GPS car tracker</a></iframe></div>
+
+        
+
+        </div>
+    
+    <div class="formulario">
+        <form action="" method="POST" id="form">
+        <h2 class="titulo-contactos">Contactanos</h2>
+        <input type="text" name="nombre" id="name" placeholder="Nombre" required>
+        <input type="text" name="correo" id="correo" placeholder="Correo" required>
+        <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+        <textarea name="mensaje" id="textarea" cols="30" rows="10" placeholder="Escribe tu mensaje" required></textarea>
+        <button type="submit" id="boton">Enviar</button>
+        <p class="warnings" id="warnings"></p>
+        </form>
+
+
+
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
     
 
    <footer>
@@ -51,16 +93,13 @@
         </ul>
     </div>
 </footer>
+
+
+
 </body>
 <script src="/js/mijs.js"></script>
 </html>
-    <!--*Formulario de reserva:
-Nombre:
-Apellido:
-Mail:
-Fecha: 
-Pelicula(las qué esten en cartelera) como opcion
-Cantidad de asientos: 
-Boton de confirmacion
--->
+
+
+
 
