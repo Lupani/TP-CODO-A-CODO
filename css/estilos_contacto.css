@@ -175,12 +175,6 @@ textarea {
     cursor: pointer;
 }
 
-@media(max-width:480px) {
-    form {
-        width: 100%;
-    }
-}
-
 .warnings {
     width: 200px;
     text-align: center;
@@ -191,9 +185,18 @@ textarea {
 }
 
 
+
+@media(max-width:480px) {
+    form {
+        width: 100%;
+    }
+}
+
+
+
+
 /* FOOTER */
 
-/*Footer*/
 footer {
     background-color: rgb(1, 21, 72);
     color: rgb(250, 250, 250);
