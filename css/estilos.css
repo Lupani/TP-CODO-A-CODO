@@ -16,11 +16,11 @@ header{
     flex-wrap: nowrap;
 }
 .titulo img{
-    width: 5rem;
+    width: 5em;
 }
 .titulo h1{
     text-align: center;
-    font-size: 500%;
+    font-size: 5em;
     color: whitesmoke;
     font-family: 'Dancing Script', cursive;
 }
@@ -217,7 +217,7 @@ section {
     font-size: 1.5rem;
     width: 100%;
     border: 5px solid rgb(141, 10, 10);
-    margin: 2.5%;
+    margin: 2%;
     background-color: rgb(250, 250, 250, 25%);
 }
 .horarios caption{
@@ -250,14 +250,14 @@ footer {
 }
 .copyright{
     float: left;
-    margin: 0.5em 2em;
+    margin: 1.5em 2em;
     font-size: 1.2em;
 }
 .redes{
     float: right;
     display: flex;
-    margin: 0.5em 2em;
-    font-size: 1.5em;
+    margin: 1.5em 2em;
+    font-size: 1em;
     }
 .redes ul{
     list-style-type: none;
@@ -266,9 +266,11 @@ footer {
     display: inline;
     margin: 0 0.5em;
 }
-.redes ul li a{
+.redes ul li a i{
     text-decoration: none;
+    color: bisque;
+
 }
-.redes ul li img{
-    width: 2em;
+.redes ul li a i{
+    font-size: 180%;
 }
