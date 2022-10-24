@@ -19,7 +19,7 @@ body {
 
 
 /* HEADER */
-header{
+header {
     background-color: rgb(1, 21, 72);
 }
 .titulo{
@@ -62,16 +62,6 @@ header{
 
 
 
-
-/*.contacto{
-    background-image: url(/img/cine.jfif);
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-    margin: 0;
-
-}*/
-
-
 .titulo-contactos { 
     color: #ffffff;
     font-family: var(--fuenteCuerpo);
@@ -81,9 +71,6 @@ header{
     margin-bottom: 20px;
     border: none;
 }
-
-
-
 
 .toda-la-pagina {
     display: flex;
@@ -135,10 +122,6 @@ header{
 }
 
 
-
-
-
-
 /* HACER FORMULARIO RESPONSIVE */
 .formulario {
     width: 45%;
@@ -148,8 +131,6 @@ header{
     /*box-sizing: border-box;*/
     /*margin-top: 20px;*/
     border-radius: 5%;
-    
-    
 }
 
 .maps iframe {
@@ -158,9 +139,6 @@ header{
     width: 100%;
     height: 32.5vw;
 }
-
-
-
 
 input, textarea{
     width: 100%;
@@ -181,7 +159,7 @@ textarea{
     padding: 7px;
     box-sizing: border-box;
     font-size: 17px;
-    background: var(--colorAzul);
+    background: var(--colorBordo);
     color: #fff;
     padding: 20px;
 }
@@ -189,29 +167,28 @@ textarea{
     cursor: pointer;
 }
 
-@media(max-width:480px) {
+/*@media(max-width:480px) {
     form {
         width: 100%;
     }
-}
+}*/
 
 .warnings {
     width: 200px;
     text-align: center;
     margin: auto;
-    color:#B06AB3;
+    color: var(--colorAzul);
     padding-top: 20px;
 }
 
 
 
-@media(max-width:480px) {
+/*@media(max-width:480px) {
     form {
         width: 100%;
     }
 }
-
-
+*/
 
 
 /* FOOTER */
