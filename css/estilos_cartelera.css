@@ -85,7 +85,7 @@ header{
 
 .carteleraTitulo {
     text-align: center;
-        padding: 4%;
+    padding: 4%;
     font-family: var(--fuenteTitulo); /* LLAMAR A FUENTE GUARDADA EN ROOT */
     font-size: 10vw;
 }
@@ -98,15 +98,16 @@ header{
 }
 
 .card:hover {
-    -webkit-transform: scale(1.08);
+    -webkit-transform:;
+    transform:perspective();
     transform:;
-    scale(1.5);
-    box-shadow: 10px 10px 34px 0px linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(8,8,112,1) 27%, rgba(9,57,121,1) 49%, rgba(0,212,255,1) 100%);
-    -webkit-box-shadow: 10px 10px 34px 0px rgba(0,104,255,0.75);
-    -moz-box-shadow: 10px 10px 34px 0px rgba(0,104,255,0.75);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
+    scale(1.5):;
+    box-shadow: 10px 10px 20px 5px linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(8,8,112,1) 27%, rgba(9,57,121,1) 49%, rgba(0,212,255,1) 100%);
+    -webkit-box-shadow: 10px 10px 20px 5px rgba(0,104,255,0.75);
+    -moz-box-shadow: 10px 10px 20px 5px rgba(0,104,255,0.75);
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
 }
 
   /* FIN ESTILOS CARDS */
@@ -117,7 +118,7 @@ header{
     margin-top: 20px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-column-gap: 20px;
+    grid-column-gap: 10px;
     width: 100%;
 }
 
@@ -130,17 +131,27 @@ header{
 }
 
 .boton {
-	background: rgba(0,0,0, 0.5);
+	background: rgb(1, 21, 72);
+	align-items: center;
 	border: none;
-    align-items: center;
-	border-radius: 0.31em;
-	padding: 0.93em 1.87em;
-	color: #fff;
-	margin-right: 1.25em;
+	border-radius: 2em;
+	padding: 0.3em 0.50rem;
+	color:#fff;
+	margin-right: 2em;
+    margin-left: 2em;
 	cursor: pointer;
-	transition: .3s ease all;
-	font-size: 1.12em;
+	transition: 0.4s ease all;
+	font-size: 1em;
+	-webkit-transition: 0.4s ease all;
+	-moz-transition: 0.4s ease all;
+	-ms-transition: 0.4s ease all;
+	-o-transition: 0.4s ease all;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	-ms-border-radius: 2em;
+	-o-border-radius: 2em;
 }
+
 
 .cartelera h5,p{
     font-size: 70%;
@@ -149,17 +160,17 @@ header{
     overflow: hidden;
     max-width: 220px;
 }
-.pelicula-principal .boton:hover {
-	background: #fff;
-	color: #000;
+ .boton:hover {
+	background: var(--colorBordo);
+	color:cornsilk;
 }
 
-.pelicula-principal .boton i {
+.boton i {
 	margin-right: 1.25em;
 }
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 300px) {
 	header .logotipo {
 		margin-bottom: 10px;
 		font-size: 30px;
@@ -170,24 +181,12 @@ header{
 		text-align: center;
 	}
 
-	.pelicula-principal {
-		font-size: 14px;
-	}
 
-	.pelicula-principal .descripcion {
+	.descripcion {
 		max-width: 100%;
 	}
 }
 
-
-
-.cartelera h5,p{
-    font-size: 70%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 220px;
-}
 
   /* FIN ESTILOS CARDS */
 
