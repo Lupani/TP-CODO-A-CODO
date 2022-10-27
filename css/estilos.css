@@ -21,7 +21,7 @@ header{
 .titulo h1{
     text-align: center;
     font-size: 5em;
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     font-family: 'Dancing Script', cursive;
 }
 
@@ -32,9 +32,9 @@ header{
     align-items: center;
 }
 .enlaces-nav{
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     font-weight: bold;
-    font-size: 120%;
+    font-size: 1.2em;
     text-decoration: none;   
     padding: 1em;
     margin: auto; 
@@ -43,6 +43,7 @@ header{
 .enlaces-nav:hover{
     background: lightblue;
 }
+/*Fin header*/
 .contenido{
     font-family: 'Ubuntu', sans-serif;
     margin-top: 1%;
@@ -66,19 +67,16 @@ section {
       }
       .container h1 {
         font-family: 'Lobster', cursive;
-        font-size: 3rem;
-        color: bisque;
+        font-size: 5vw;
+        color: rgb(0, 0, 0);
         text-align: center;
         margin: 1%;
-      }
-      
-      .main-heading {
-          padding: 2rem 0 2rem 0;
       }
 
       .content {
           position: relative;
       }
+
       .carousel-content {
           position: absolute;
           top: 50%;
@@ -114,51 +112,47 @@ section {
       }
 
       @keyframes slideshow {
-          0% {
-              left: 0;
-          }
+        0% {
+            left: 0%;
+        }
+        10% {
+            left: 0%;
+        }
 
-          10% {
-              left: 0;
-          }
+        20% {
+            left: -100%;
+        }
+        30% {
+            left: -100%;
+        }
 
-          15% {
-              left: -100%;
-          }
+        40% {
+            left: -200%;
+        }
 
-          25% {
-              left: -100%;
-          }
+        50%{
+            left: -200%;
+        }
 
-          30% {
-              left: -200%;
-          }
+        60% {
+            left: -200%;
+        }
 
-          40% {
-              left: -200%;
-          }
+        70% {
+            left: -100%;
+        }
 
+        80% {
+            left: -100%;
+        }
 
-          60% {
-              left: -200%;
-          }
-
-          70% {
-              left: -200%;
-          }
-
-          75% {
-              left: -100%;
-          }
-
-          85% {
-              left: -100%;
-          }
-
-          90% {
-              left: 0%;
-          }
-      }
+        90%{
+            left: 0%;
+        }
+        100% {
+            left: 0%;
+        }
+    }
 
       .slide-btn {
           background-color: rgb(1, 21, 72);
@@ -214,7 +208,7 @@ section {
 .horarios{
     border-collapse: collapse;
     table-layout: auto;
-    font-size: 1.5rem;
+    font-size: 2.2vw;
     width: 100%;
     border: 5px solid rgb(141, 10, 10);
     margin: 2%;
@@ -223,20 +217,24 @@ section {
 .horarios caption{
     caption-side: top;
     font-family: 'Lobster', cursive;
-    font-size: 3rem;
-    color: bisque;
+    font-size: 5vw;
+    color: rgb(0, 0, 0);
 }
 .horariosCabecera{
     background-color: rgb(141, 10, 10);
-    color: bisque;
+    color: rgb(245, 245, 245);
     text-align: center;
-    font-size: 150%;
+    font-size: 2.5vw;
     border: 5px solid rgb(141, 10, 10);
 }
 td {
-    font-size: 110%;
     text-align: center;
     border: 2px solid rgb(141, 10, 10);
+}
+.funciones:hover{
+    color: rgb(245, 245, 245);
+    background-color: rgb(141, 60, 60);
+    cursor: default;
 }
 
 /*Footer*/
@@ -268,7 +266,7 @@ footer {
 }
 .redes ul li a i{
     text-decoration: none;
-    color: bisque;
+    color: rgb(250, 250, 250);
 
 }
 .redes ul li a i{
