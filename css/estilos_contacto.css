@@ -128,11 +128,8 @@ header {
 
 .formulario {
     width: 45%;
-    /*margin: auto;*/
     background: var(--colorBordo);
     padding: 10px 20px; 
-    /*box-sizing: border-box;*/
-    /*margin-top: 20px;*/
     border-radius: 5%;
 }
 
@@ -170,12 +167,6 @@ textarea{
     cursor: pointer;
 }
 
-/*@media(max-width:480px) {
-    form {
-        width: 100%;
-    }
-}*/
-
 .warnings {
     width: 200px;
     text-align: center;
@@ -183,19 +174,6 @@ textarea{
     color: var(--colorAzul);
     padding-top: 20px;
 }
-
-
-
-/*@media(max-width:480px) {
-    form {
-        width: 100%;
-    }
-}
-*/
-
-
-/* 
-
 
 /*Footer*/
 footer {
