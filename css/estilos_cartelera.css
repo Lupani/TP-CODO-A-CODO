@@ -18,7 +18,7 @@ body {
 /* comienza HEADER */
 
 header{
-    background-color: rgb(1, 21, 72);
+    background-color: var(--colorAzul);
 }
 .titulo{
     display: flex;
@@ -63,10 +63,12 @@ header{
 /*titulo cartelera*/
 
 .carteleraTitulo{
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     background-color:  var(--colorBordo);
     text-align: center;
+    padding-top: 5%;
+    padding-bottom: 1%;
 
 }
 /*body*/
@@ -80,93 +82,187 @@ header{
 
 .centrado {
     margin: 0 auto;
-    padding: 0 .8em;
+    padding: 0.8em;
 }
 
 .carteleraTitulo {
     text-align: center;
     padding: 4%;
     font-family: var(--fuenteTitulo); /* LLAMAR A FUENTE GUARDADA EN ROOT */
-    font-size: 10vw;
+    font-size: 5vw;
+    
 }
 
 .titulo1 {
+    margin: 2em;
+    padding: 1em;
+    text-align: center;
+    font-weight: 300px;
+    color: hsl(240, 92%, 5%);
+    font-style: var(--fuenteTitulo);
+}
+
+/* ESTILOS CARDS */
+.container{
+    background-color: #3d3d3d;
+    display: flex;  
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    
+  }
+  
+  
+  .card{
+      /* flex: 1;
+      flex-basis: 300px;
+      flex-grow: 0; */
+      width: 300px;
+      background: rgb(236, 209, 209);
+      border: 2px solid rgb(13, 26, 100);
+      box-shadow: 0px 4px 7px rgba(26, 6, 141, 0.5);
+      cursor: pointer;
+      transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+      overflow: hidden;
+      position: relative;    
+      margin: 2rem auto;
+  }
+  .card img{
+      width: 100%;
+      height:100%;
+      transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+  }
+  .descriptions{
+      position: absolute;
+      top:0px;
+      left:0px;
+      background-color: rgba(255,255,255,.7);
+      width:100%;
+      height:100%;
+      transition: all .7s ease-in-out;
+      padding: 20px;
+      box-sizing: border-box;
+      clip-path: circle(0% at 100% 100%);
+  }
+  .card:hover .descriptions{
+      left:0px;
+      transition: all .7s ease-in-out;
+      clip-path: circle(80%);
+  }
+  .card:hover{
+      transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+      box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+      transform: scale(.97);
+      -webkit-box-shadow: 10px 10px 20px 5px rgba(5, 69, 165, 0.75);
+      -moz-box-shadow: 10px 10px 20px 5px rgba(9, 102, 243, 0.75);
+  }
+  .card:hover img{
+      transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+      transform: scale(1.6) rotate(20deg);
+      filter: blur(3px);
+  }
+  .card h1{
+      color: #242020;
+      letter-spacing: 1px;
+      margin: 0px;
+  }
+  .card p{
+      line-height: 24px;
+      height: 70%;
+  }
+  .card button{
+      width: fit-content;
+      height: 40px;
+      cursor: pointer;
+      border-style: none;
+      background-color: #b81111;
+      color:#fff;
+      font-size: 15px;
+      outline: none;
+      box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+      transition: all .5s ease-in-out;
+  }
+  .card button:hover{
+      transform: scale(.95) translateX(-5px);
+      transition: all .5s ease-in-out;
+      background-color: blue;
+  }
+
+
+
+/* FIN ESTILOS CARDS */
+
+
+
+
+
+    
+  /* FOOTER */
+
+footer {
+    background-color: rgb(1, 21, 72);
+    color: rgb(250, 250, 250);
+    height: 5em;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+
+}
+.copyright{
+    float: left;
+    margin: 1.5em 2em;
+    font-size: 1.2em;
+}
+.redes{
+    float: right;
+    display: flex;
+    margin: 1.5em 2em;
+    font-size: 1em;
+    }
+.redes ul{
+    list-style-type: none;
+}
+.redes ul li{
+    display: inline;
+    margin: 0 0.5em;
+}
+.redes ul li a i{
+    text-decoration: none;
+    color: bisque;
+
+}
+.redes ul li a i{
+    font-size: 180%;
+}
+
+/*Responsive */
+
+
+
+
+@media screen and (max-width: 600px) {
+    .centrado {
+        margin: auto;
+        padding: 0.8em;
+    }
+
+    .titulo1 {
     margin: 0 0 1em;
     padding: 1em 0;
-    font-weight: 300;
+    font-weight: 300vw;
     color: hsl(0, 0%, 100%);
 }
 
-.card:hover {
-    -webkit-transform:;
-    transform:perspective();
-    transform:;
-    scale(1.5):;
-    box-shadow: 10px 10px 20px 5px linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(8,8,112,1) 27%, rgba(9,57,121,1) 49%, rgba(0,212,255,1) 100%);
-    -webkit-box-shadow: 10px 10px 20px 5px rgba(0,104,255,0.75);
-    -moz-box-shadow: 10px 10px 20px 5px rgba(0,104,255,0.75);
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
-}
+	header .container {
+		flex-direction: column;
+		text-align: center;
+	}
 
-  /* FIN ESTILOS CARDS */
+	.card {
+		font-size: 14px;
+	}
 
-
-/* imagenes y cards cartelera*/
-.container{
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-column-gap: 10px;
-    width: 100%;
-}
-
-.item{
-    height: auto;
-}
-
-.item img{
-    width: 100%;
-}
-
-.boton {
-	background: rgb(1, 21, 72);
-	align-items: center;
-	border: none;
-	border-radius: 2em;
-	padding: 0.3em 0.50rem;
-	color:#fff;
-	margin-right: 2em;
-    margin-left: 2em;
-	cursor: pointer;
-	transition: 0.4s ease all;
-	font-size: 1em;
-	-webkit-transition: 0.4s ease all;
-	-moz-transition: 0.4s ease all;
-	-ms-transition: 0.4s ease all;
-	-o-transition: 0.4s ease all;
-	-webkit-border-radius: 2em;
-	-moz-border-radius: 2em;
-	-ms-border-radius: 2em;
-	-o-border-radius: 2em;
-}
-
-
-.cartelera h5,p{
-    font-size: 70%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 220px;
-}
- .boton:hover {
-	background: var(--colorBordo);
-	color:cornsilk;
-}
-
-.boton i {
-	margin-right: 1.25em;
+	
 }
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
@@ -186,143 +282,3 @@ header{
 		max-width: 100%;
 	}
 }
-
-
-  /* FIN ESTILOS CARDS */
-
-
-  
-  /* FOOTER */
-  footer {
-    background-color: rgb(1, 21, 72);
-    color: rgb(0, 0, 0);
-    height: 5em;
-    align-items: center;
-
-}
-.copyright{
-    float: left;
-    margin: 0.5em 2em;
-    font-size: 1.2em;
-}
-.redes{
-    float: right;
-    display: flex;
-    margin: 0.5em 2em;
-    }
-.redes ul{
-    list-style-type: none;
-}
-.redes ul li{
-    display: inline;
-    margin: 0 0.5em;
-}
-.redes ul li a{
-    text-decoration: none;
-}
-.redes ul li img{
-    width: 2em;
-}
-
-/*Responsive (?*/
-@media screen and (min-width: 52em) {
-    .centrado {
-        margin: 0 auto;
-        padding: 0.8em;
-    }
-
-    .titulo1 {
-    margin: 0 0 1em;
-    padding: 1em 0;
-    font-weight: 300;
-    color: hsl(0, 0%, 100%);
-}
-
-	header .container {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.card {
-		font-size: 14px;
-	}
-
-	.item .descripcion {
-		max-width: 100%;
-	}
-
-}
-/*prueba ventana modal*/
-/*
-.modal{
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.modal{
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.5);
-	transition: all 500ms ease;
-	opacity: 0;
-	visibility: hidden;
-}
-#btn-modal:checked ~ .modal{
-	opacity: 1;
-	visibility: visible;
-} 
-.contenedor2{
-	width: 400px;
-	height: 300px;
-	margin: auto;
-	background: #fff;
-	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
-	transition: all 500ms ease;
-	position: relative;
-	transform: translateY(-30%);
-}
-#btn-modal:checked ~ .modal .contenedor{
-	transform: translateY(0%);
-} 
-.contenedor2  {
-	padding: 10px;
-	background: rgb(15, 1, 1);
-	color: #fff;
-}
-.contenedor2 label{
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	color: #fff;
-	font-size: 15px;
-	cursor: pointer;
-}
-.contenidocard{
-	width: 100%;
-	padding: 10px; 
-}
-.contenidocard h5{
-	margin-bottom: 10px;
-}
-.contenidocard p {
-	margin-bottom: 7px;
-}
-#btn-modal{
-	display: none;
-}
-.lbl-modal{
-	background: #fff;
-	padding: 10px 15px;
-	border-radius: 4px;
-	cursor: pointer;
-}
-@media only screen and (min-width:320px) and (max-width:768px){
-	.contenedor2{
-		width: 95%;
-	}
-}
-*/
-/*fin de prueba ventana modal*/
