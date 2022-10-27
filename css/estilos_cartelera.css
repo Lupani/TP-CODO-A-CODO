@@ -213,46 +213,46 @@ header{
 /* FIN ESTILOS CARDS */
    
   /* FOOTER */
-
+  
 footer {
-    background-color: rgb(1, 21, 72);
-    color: rgb(250, 250, 250);
-    height: 5em;
-    align-items: center;
-    font-family: "Ubuntu", sans-serif;
-
+      background-color: rgb(1, 21, 72);
+      color: rgb(250, 250, 250);
+      height: 5em;
+      align-items: center;
+      font-family: "Ubuntu", sans-serif;
+  
 }
 
 .copyright{
-    float: left;
-    margin: 1.5em 2em;
-    font-size: 1.2em;
+      float: left;
+      margin: 1.5em 2em;
+      font-size: 1.2em;
 }
 
 .redes{
-    float: right;
-    display: flex;
-    margin: 1.5em 2em;
-    font-size: 1em;
+      float: right;
+      display: flex;
+      margin: 1.5em 2em;
+      font-size: 1em;
 }
 
 .redes ul{
-    list-style-type: none;
+      list-style-type: none;
 }
 
 .redes ul li{
-    display: inline;
-    margin: 0 0.5em;
+      display: inline;
+      margin: 0 0.5em;
 }
 
 .redes ul li a i{
-    text-decoration: none;
-    color: bisque;
-
+      text-decoration: none;
+      color: rgb(250, 250, 250);
+  
 }
 
 .redes ul li a i{
-    font-size: 180%;
+      font-size: 180%;
 }
 
 /*Responsive */
