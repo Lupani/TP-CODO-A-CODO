@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 :root {
     --colorBordo: rgb(141, 10, 10);
     --colorAzul: rgb(1, 21, 72);
@@ -10,6 +11,7 @@
     --fuenteCuerpo: 'Ubuntu', sans-serif;
     --fuenteTitulo: 'Lobster', sans-serif;
 }
+
 body {
     background-color: var(--colorRojo);
 }
@@ -20,6 +22,7 @@ body {
 header{
     background-color: var(--colorAzul);
 }
+
 .titulo{
     display: flex;
     justify-content: center;
@@ -27,6 +30,7 @@ header{
     vertical-align: middle;
     flex-wrap: nowrap;
 }
+
 .titulo img{
     width: 5em;
 	max-width: 450px;
@@ -45,6 +49,7 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+
 .enlaces-nav{
     color: whitesmoke;
     font-weight: bold;
@@ -52,8 +57,9 @@ header{
     text-decoration: none;   
     padding: 1em;
     margin: auto; 
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--fuenteCuerpo)/* LLAMAR A FUENTE GUARDADA EN ROOT */
 }
+
 .enlaces-nav:hover{
     background: lightblue;
 }
@@ -76,7 +82,7 @@ header{
 .contenido{
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--fuenteCuerpo) /* LLAMAR A FUENTE GUARDADA EN ROOT */
 }
 
 
@@ -103,18 +109,16 @@ header{
 }
 
 /* ESTILOS CARDS */
-.container{
+.container_pelis{
     background-color: #3d3d3d;
     display: flex;  
     justify-content:space-between;
     flex-wrap: wrap;
     width: 80%;
-    margin: auto;
-    
-  }
-  
-  
-  .card{
+    margin: auto;  
+}
+   
+.card_peli{
       /* flex: 1;
       flex-basis: 300px;
       flex-grow: 0; */
@@ -127,13 +131,14 @@ header{
       overflow: hidden;
       position: relative;    
       margin: 2rem auto;
-  }
-  .card img{
+}
+.card_peli img{
       width: 100%;
       height:100%;
       transition: all .5s cubic-bezier(.8,.5,.2,1.4);
-  }
-  .descriptions{
+}
+
+.descripcion_peli{
       position: absolute;
       top:0px;
       left:0px;
@@ -144,34 +149,40 @@ header{
       padding: 20px;
       box-sizing: border-box;
       clip-path: circle(0% at 100% 100%);
-  }
-  .card:hover .descriptions{
+}
+
+.card_peli:hover .descripcion_peli{
       left:0px;
       transition: all .7s ease-in-out;
       clip-path: circle(80%);
-  }
-  .card:hover{
+}
+
+.card_peli:hover{
       transition: all .5s cubic-bezier(.8,.5,.2,1.4);
       box-shadow: 0px 2px 3px rgba(0,0,0,.3);
       transform: scale(.97);
       -webkit-box-shadow: 10px 10px 20px 5px rgba(5, 69, 165, 0.75);
       -moz-box-shadow: 10px 10px 20px 5px rgba(9, 102, 243, 0.75);
-  }
-  .card:hover img{
+}
+
+.card_peli:hover img{
       transition: all .5s cubic-bezier(.8,.5,.2,1.4);
       transform: scale(1.6) rotate(20deg);
       filter: blur(3px);
-  }
-  .card h1{
+}
+
+.card_peli h1{
       color: #242020;
       letter-spacing: 1px;
       margin: 0px;
-  }
-  .card p{
+}
+
+.card_peli p{
       line-height: 24px;
       height: 70%;
-  }
-  .card button{
+}
+
+.card_peli button{
       width: fit-content;
       height: 40px;
       cursor: pointer;
@@ -182,22 +193,16 @@ header{
       outline: none;
       box-shadow: 0px 2px 3px rgba(0,0,0,.4);
       transition: all .5s ease-in-out;
-  }
-  .card button:hover{
+}
+
+.card_peli button:hover{
       transform: scale(.95) translateX(-5px);
       transition: all .5s ease-in-out;
       background-color: blue;
-  }
-
-
+}
 
 /* FIN ESTILOS CARDS */
-
-
-
-
-
-    
+   
   /* FOOTER */
 
 footer {
@@ -208,36 +213,40 @@ footer {
     font-family: "Ubuntu", sans-serif;
 
 }
+
 .copyright{
     float: left;
     margin: 1.5em 2em;
     font-size: 1.2em;
 }
+
 .redes{
     float: right;
     display: flex;
     margin: 1.5em 2em;
     font-size: 1em;
-    }
+}
+
 .redes ul{
     list-style-type: none;
 }
+
 .redes ul li{
     display: inline;
     margin: 0 0.5em;
 }
+
 .redes ul li a i{
     text-decoration: none;
     color: bisque;
 
 }
+
 .redes ul li a i{
     font-size: 180%;
 }
 
 /*Responsive */
-
-
 
 
 @media screen and (max-width: 600px) {
@@ -251,17 +260,16 @@ footer {
     padding: 1em 0;
     font-weight: 300vw;
     color: hsl(0, 0%, 100%);
-}
+    }
 
-	header .container {
+	header .container_pelis {
 		flex-direction: column;
 		text-align: center;
 	}
 
-	.card {
+	.card_peli {
 		font-size: 14px;
 	}
-
 	
 }
 
@@ -278,7 +286,7 @@ footer {
 	}
 
 
-	.descripcion {
+	.descripcion_peli{
 		max-width: 100%;
 	}
 }
