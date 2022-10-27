@@ -147,13 +147,20 @@ input, textarea{
     box-sizing: border-box;
     font-size: 17px;
     font-family: var(--fuenteCuerpo);
+    border-radius: 15px;
+    
+    
 }
+
+
 textarea{
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
+    
 }
 #boton{
+    border-radius: 15px;
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
@@ -162,6 +169,7 @@ textarea{
     background: var(--colorBordo);
     color: #fff;
     padding: 20px;
+    
 }
 #boton:hover{
     cursor: pointer;
