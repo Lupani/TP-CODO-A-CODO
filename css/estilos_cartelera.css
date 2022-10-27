@@ -150,7 +150,10 @@ header{
       box-sizing: border-box;
       clip-path: circle(0% at 100% 100%);
 }
+.descripcion_peli p{
+      padding-top: 1rem;
 
+}
 .card_peli:hover .descripcion_peli{
       left:0px;
       transition: all .7s ease-in-out;
@@ -184,15 +187,21 @@ header{
 
 .card_peli button{
       width: fit-content;
-      height: 40px;
+      height: 50px;
       cursor: pointer;
       border-style: none;
+      border-radius: 30px;
+      padding: 0 10% ;
       background-color: #b81111;
       color:#fff;
       font-size: 15px;
       outline: none;
       box-shadow: 0px 2px 3px rgba(0,0,0,.4);
       transition: all .5s ease-in-out;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
 }
 
 .card_peli button:hover{
