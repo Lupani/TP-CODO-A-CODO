@@ -211,13 +211,11 @@ header{
 
 .mensaje-final>#icono1 {
     justify-content: flex-start;
-    
     padding: 2%;
     font-size: 8vw;
 }
 .mensaje-final>#icono2{
     justify-content: flex-end;
-    
     padding: 2%;
     font-size: 8vw;
 }
