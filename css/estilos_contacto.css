@@ -79,7 +79,10 @@ header {
     align-self: center;
     align-content: center;
     justify-content: space-between;
-    margin: 0 3%;
+    margin-top: 0;
+    margin-bottom: 0.5vh;
+    margin-left: 3%;
+    margin-right: 3%;
     padding: 3%;
 }
 
@@ -122,14 +125,11 @@ header {
 }
 
 
-/* HACER FORMULARIO RESPONSIVE */
+
 .formulario {
     width: 45%;
-    /*margin: auto;*/
     background: var(--colorBordo);
-    padding: 10px 20px; /* HACER RESPONSIVE */
-    /*box-sizing: border-box;*/
-    /*margin-top: 20px;*/
+    padding: 10px 20px; 
     border-radius: 5%;
 }
 
@@ -147,13 +147,20 @@ input, textarea{
     box-sizing: border-box;
     font-size: 17px;
     font-family: var(--fuenteCuerpo);
+    border-radius: 15px;
+    
+    
 }
+
+
 textarea{
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
+    
 }
 #boton{
+    border-radius: 15px;
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
@@ -162,16 +169,11 @@ textarea{
     background: var(--colorBordo);
     color: #fff;
     padding: 20px;
+    
 }
 #boton:hover{
     cursor: pointer;
 }
-
-/*@media(max-width:480px) {
-    form {
-        width: 100%;
-    }
-}*/
 
 .warnings {
     width: 200px;
@@ -181,53 +183,40 @@ textarea{
     padding-top: 20px;
 }
 
+/*Footer*/
+footer {
+    background-color: rgb(1, 21, 72);
+    color: rgb(250, 250, 250);
+    height: 5em;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    
 
-
-/*@media(max-width:480px) {
-    form {
-        width: 100%;
-    }
 }
-*/
+.copyright{
+    float: left;
+    margin: 1.5em 2em;
+    font-size: 1.2em;
+}
+.redes{
+    float: right;
+    display: flex;
+    margin: 1.5em 2em;
+    font-size: 1em;
+    }
+.redes ul{
+    list-style-type: none;
+}
+.redes ul li{
+    display: inline;
+    margin: 0 0.5em;
+}
+.redes ul li a i{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
 
+}
+.redes ul li a i{
+    font-size: 180%;
+}
 
-/* 
-
-
-
-
-/*Footer*/ 
- footer { 
-     background-color: rgb(1, 21, 72); 
-     color: rgb(250, 250, 250); 
-     height: 5em; 
-     align-items: center; 
-     font-family: "Ubuntu", sans-serif; 
-  
- } 
- .copyright{ 
-     float: left; 
-     margin: 1.5em 2em; 
-     font-size: 1.2em; 
- } 
- .redes{ 
-     float: right; 
-     display: flex; 
-     margin: 1.5em 2em; 
-     font-size: 1em; 
-     } 
- .redes ul{ 
-     list-style-type: none; 
- } 
- .redes ul li{ 
-     display: inline; 
-     margin: 0 0.5em; 
- } 
- .redes ul li a i{ 
-     text-decoration: none; 
-     color: rgb(250, 250, 250); 
-  
- } 
- .redes ul li a i{ 
-     font-size: 180%; 
- }
