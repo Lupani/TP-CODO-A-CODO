@@ -203,6 +203,7 @@ section {
 /*Tabla*/
 .tablaHorarios{
     width: 95%;
+    font-family: 'Ubuntu', sans-serif;;
 }
 
 .horarios{
