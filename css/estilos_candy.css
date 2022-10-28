@@ -64,8 +64,12 @@ header{
     padding: 4%;
     font-family: var(--fuenteTitulo); /* LLAMAR A FUENTE GUARDADA EN ROOT */
     font-size: 5vw;
+    background-color: var(--colorBordo);
+    margin-top: 2%;
+    
     
 }
+
 
 .fila {
     display: flex;
