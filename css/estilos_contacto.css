@@ -170,6 +170,7 @@ textarea{
     background: var(--colorBordo);
     color: #fff;
     padding: 20px;
+    font-family: var(--fuenteCuerpo);
     
 }
 #boton:hover{
