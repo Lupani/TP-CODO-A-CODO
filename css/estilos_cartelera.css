@@ -20,23 +20,20 @@ body {
 /* comienza HEADER */
 
 header{
-    background-color: var(--colorAzul);
+    background-color: rgb(1, 21, 72);
 }
-
 .titulo{
     display: flex;
     justify-content: center;
     align-items: center;
     vertical-align: middle;
     flex-wrap: nowrap;
+    
 }
-
 .titulo img{
     width: 5em;
-	max-width: 450px;
-	padding-right: 2em;
+    margin-right: 3%;
 }
-
 .titulo h1{
     text-align: center;
     font-size: 5em;
@@ -50,7 +47,6 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-
 .enlaces-nav{
     color: whitesmoke;
     font-weight: bold;
@@ -58,9 +54,8 @@ header{
     text-decoration: none;   
     padding: 1em;
     margin: auto; 
-    font-family: var(--fuenteCuerpo)/* LLAMAR A FUENTE GUARDADA EN ROOT */
+    font-family: 'Ubuntu', sans-serif;
 }
-
 .enlaces-nav:hover{
     background: lightblue;
 }
@@ -120,9 +115,6 @@ header{
 }
    
 .card_peli{
-      /* flex: 1;
-      flex-basis: 300px;
-      flex-grow: 0; */
       width: 300px;
       background: rgb(236, 209, 209);
       border: 2px solid rgb(13, 26, 100);
@@ -143,7 +135,7 @@ header{
       position: absolute;
       top:0px;
       left:0px;
-      background-color: rgba(255,255,255,.7);
+      background-color: rgba(255, 255, 255, 0.568);
       width:100%;
       height:100%;
       transition: all .7s ease-in-out;
@@ -183,7 +175,8 @@ header{
 
 .card_peli p{
       line-height: 24px;
-      height: 70%;
+      max-height: 60%;
+      
 }
 
 .card_peli button{
@@ -192,8 +185,8 @@ header{
       cursor: pointer;
       border-style: none;
       border-radius: 30px;
-      padding: 0 10% ;
-      background-color: #b81111;
+      padding: 0 10%;
+      background-color: var(--colorBordo);
       color:#fff;
       font-size: 15px;
       outline: none;
@@ -203,20 +196,29 @@ header{
       -moz-border-radius: 30px;
       -ms-border-radius: 30px;
       -o-border-radius: 30px;
+      position: absolute;
+      left: 6%;
+      bottom: 5%;
 }
 
 .card_peli button:hover{
       transform: scale(.95) translateX(-5px);
       transition: all .5s ease-in-out;
-      background-color: blue;
+      background-color: var(--colorAzul);
 }
-
+/*HORARIOS EN CARD PELIS*/
+.horariodepeli{ 
+        padding-bottom: 0%;
+        text-align: center;
+        margin-top: 10%;
+        list-style:none
+}
 /* FIN ESTILOS CARDS */
    
   /* FOOTER */
   
 footer {
-      background-color: rgb(1, 21, 72);
+      background-color: var(--colorAzul);
       color: rgb(250, 250, 250);
       height: 5em;
       align-items: center;
