@@ -106,7 +106,8 @@ header{
 
 /* ESTILOS CARDS */
 .container_pelis{
-    background-color: #3d3d3d;
+    background-color: #3d3d3d56;
+    /* background-color: #3d3d3d; */
     display: flex;  
     justify-content:space-between;
     flex-wrap: wrap;
@@ -122,8 +123,13 @@ header{
       cursor: pointer;
       transition: all .5s cubic-bezier(.8,.5,.2,1.4);
       overflow: hidden;
-      position: relative;    
+      position: relative;
       margin: 2rem auto;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
 }
 .card_peli img{
       width: 100%;
