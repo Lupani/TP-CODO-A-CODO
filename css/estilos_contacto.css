@@ -54,6 +54,8 @@ header {
     padding: 1em;
     margin: auto; 
     font-family: 'Ubuntu', sans-serif;
+    border-radius: 15%;
+
 }
 .enlaces-nav:hover{
     background: lightblue;
